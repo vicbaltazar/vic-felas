@@ -2,7 +2,7 @@
 
 Minha Linktree pessoal, uma página única com meus links, estilizada como um terminal Linux (neofetch-style).
 
-🔗 **Live:** _adicione aqui o link do GitHub Pages ou Vercel depois do deploy_
+🔗 **Live:** https://vicfelas-five.vercel.app/
 
 ## Preview
 
