@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-    --bg-page:#0f2e2b;
-    --panel:#1A615D;
-    --panel-dim:#164f4c;
-    --cream:#F3EBDE;
-    --sage:#B8C897;
-    --blue:#A7B8CA;
-    --pink:#EFA8AC;
-    --line:rgba(243,235,222,0.16);
+    --bg-page: #222b26;        
+    --panel: #FFFBF8;          
+    --panel-dim: #FFDCDC;      
+    --text-main: #333333;      
+    --text-muted: #666666;     
+    --pink-dark: #F49DAB;      
+    --pink-light: #FFDCDC;     
+    --green-mint: #8DE5B8;     
+    --green-lime: #9EC96F;    
+    --line: rgba(244, 157, 171, 0.25); 
 }
 
-* { box-sizing:border-box; }
+* { box-sizing: border-box; }
 
 html, body {
     margin: 0;
     padding: 32px 16px;
     font-family: 'JetBrains Mono', monospace;
     background: var(--bg-page);
-    color: var(--cream);
+    color: var(--text-main);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -27,9 +29,9 @@ html, body {
 
 .win {
     background: var(--panel);
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid var(--line);
-    box-shadow: 0 24px 60px -2px rgba(0,0,0,0.5);
+    box-shadow: 0 24px 60px -2px rgba(0,0,0,0.3);
     overflow: hidden;
     width: 100%;
     max-width: 520px;
@@ -42,10 +44,11 @@ html, body {
     background: var(--panel-dim);
     border-bottom: 1px solid var(--line);
     font-size: 12px;
-    color: var(--cream);
-    letter-spacing: 0.2em;
+    color: var(--text-main);
+    letter-spacing: 0.15em;
+    font-weight: 500;
 }
-.bar span:last-child { color: var(--blue); }
+.bar span:last-child { color: var(--pink-dark); }
 
 .body { padding: 24px 22px 26px; }
 
@@ -58,7 +61,7 @@ html, body {
 .ascii {
     font-size: 13px;
     line-height: 1.35;
-    color: var(--sage);
+    color: var(--green-lime);
     white-space: pre;
     flex-shrink: 0;
     margin: 0;
@@ -72,10 +75,10 @@ html, body {
 .info-head {
     font-size: 14.5px;
     font-weight: 700;
-    color: var(--cream);
+    color: var(--text-main);
 }
 .info-rule {
-    color: var(--blue);
+    color: var(--green-mint);
     font-size: 13px;
     margin: 2px 0 8px 0;
 }
@@ -85,11 +88,11 @@ html, body {
     line-height: 1.65;
 }
 .info-key {
-    color: var(--pink);
+    color: var(--pink-dark);
     font-weight: 600;
 }
 .info-val {
-    color: var(--cream);
+    color: var(--text-main);
 }
  
 .divider {
@@ -100,14 +103,15 @@ html, body {
  
 .section-label {
     font-size: 12px;
-    color: var(--blue);
+    color: var(--green-mint);
+    font-weight: 600;
     margin-bottom: 8px;
 }
  
-.links{
+.links {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
  
 .link-row {
@@ -116,23 +120,24 @@ html, body {
     gap: 8px;
     padding: 9px 10px;
     margin: 0 -10px;
-    border-radius: 3px;
+    border-radius: 4px;
     text-decoration: none;
     font-size: 13px;
     border: 1px solid transparent;
     transition: background 0.15s ease, border-color 0.15s ease;
 }
 .link-row:hover {
-    background: rgba(243,235,222,0.08);
+    background: var(--pink-light);
     border-color: var(--line);
 }
 .link-key {
     font-weight: 600;
+    color: var(--green-mint);
     flex-shrink: 0;
 }
 .link-val {
-    color: var(--cream);
-    opacity: 0.85;
+    color: var(--text-main);
+    opacity: 0.9;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -149,7 +154,7 @@ html, body {
     border-radius: 2px;
 }
  
-@media (max-width:460px) {
-    .neofetch { flex-direction:column; }
-    .ascii { font-size:11.5px; }
+@media (max-width: 460px) {
+    .neofetch { flex-direction: column; }
+    .ascii { font-size: 11.5px; }
 }
