@@ -1,9 +1,8 @@
 const links = [
-    { label: "github",   url: "https://github.com/vicbaltazar",      path: "github.com/vicbaltazar",       color: "var(--sage)" },
-    { label: "linkedin", url: "https://www.linkedin.com/in/vitoriabaltazar/", path: "linkedin.com/in/vitoriabaltazar/",  color: "var(--blue)" },
-    { label: "portfolio",url: "https://vicfelas.vercel.app/",           path: "vicfelas.vercel.app/",             color: "var(--pink)" },
-    { label: "instagram",url: "https://www.instagram.com/httpsvis",   path: "instagram.com/httpsvis",    color: "var(--sage)" },
-    { label: "twitter",  url: "https://x.com/vicfelas",           path: "x.com/vicfelas",             color: "var(--blue)" },
+    { label: "github",   url: "https://github.com/vicbaltazar",      path: "github.com/vicbaltazar",       color: "var(--pink-dark)" },
+    { label: "linkedin", url: "https://www.linkedin.com/in/vitoriabaltazar/", path: "linkedin.com/in/vitoriabaltazar/",  color: "var(--green-mint)" },
+    { label: "portfolio",url: "https://vicfelas-five.vercel.app/",    path: "vicfelas-five.vercel.app/",        color: "var(--green-lime)" },
+    { label: "instagram",url: "https://www.instagram.com/httpsvis",   path: "instagram.com/httpsvis",    color: "var(--pink-dark)" },
 ];
 
 const container = document.getElementById('links');
